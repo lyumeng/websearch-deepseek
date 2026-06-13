@@ -1,0 +1,50 @@
+{
+  "name": "websearch-deepseek",
+  "version": "1.0.0",
+  "description": "通用 MCP Server — 基于 DeepSeek 原生联网搜索 API 的 Web Search 工具。适用于 Claude Code、Cursor、Continue、OpenCode 等任何支持 MCP 协议的 AI 编程助手。",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "web-search",
+    "deepseek",
+    "ai-tools",
+    "ai-agent",
+    "claude-code",
+    "cursor",
+    "opencode"
+  ],
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "type": "module",
+  "bin": {
+    "websearch-deepseek": "./src/mcp.ts"
+  },
+  "exports": {
+    ".": "./src/mcp.ts",
+    "./core": "./src/core.ts",
+    "./cli": "./src/cli.ts"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "search": "npx tsx src/cli.ts search",
+    "mcp": "npx tsx src/mcp.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "prettier": "^3.8.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.8.0"
+  }
+}

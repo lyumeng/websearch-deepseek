@@ -6,9 +6,9 @@
  *
  * @module
  */
-import { resolveApiKey } from "./auth";
-import type { WebSearchResult, SearchResponse } from "./types";
-import { SearchError, SearchErrorCode } from "./types";
+import { resolveApiKey } from "./auth.js";
+import type { WebSearchResult, SearchResponse } from "./types.js";
+import { SearchError, SearchErrorCode } from "./types.js";
 
 // ── Constants ──────────────────────────────────────────────────────────────
 

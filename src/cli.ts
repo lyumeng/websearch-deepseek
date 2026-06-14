@@ -17,7 +17,7 @@
  * @module
  */
 
-import { searchWeb, formatResults } from "./core";
+import { searchWeb, formatResults } from "./core.js";
 
 function printHelp(): void {
   console.log(`websearch-deepseek v1.0.0 — DeepSeek 原生联网搜索 MCP Server

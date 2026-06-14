@@ -36,7 +36,7 @@
  * @module
  */
 
-import { searchWeb, formatResults } from "./core";
+import { searchWeb, formatResults } from "./core.js";
 
 // ── Configuration (from environment variables) ─────────────────────────────
 
